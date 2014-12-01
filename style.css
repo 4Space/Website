@@ -4,7 +4,7 @@ body {
 	color: #000305;
 	font-family: Trebuchet, Arial, sans-serif;
 	margin: 0 auto; 
-	width: 82%;
+	width: 90%;
 }
 
 h1, h2 {
@@ -23,6 +23,12 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 15px;
+}
+
 .mainHeader nav {
 	/*background-color: #666666;*/
 	background-image: url('img/header-footer.png');
@@ -30,6 +36,7 @@ a:hover, a:active {
 	line-height: 30px;
 	margin: 0 auto 30px auto;
 	text-align: center;
+
 }
 
 .mainHeader nav ul li {
@@ -55,12 +62,6 @@ a:hover, a:active {
 	width: 74%;
 }
 
-table, th, td {
-    border-collapse: collapse;
-    border: 1px solid black;
-    padding: 15px;
-}
-
 .blogContent {
 	/*background-color: #ffffff;*/
 	background-image: url('img/body.png');
@@ -78,22 +79,26 @@ table, th, td {
 	/*background-color: #ffffff;*/
 	background-image: url('img/body.png');
 	float: left;
-	margin-bottom: 3%;
+	margin-bottom: 2%;
 	margin-left: 2%;
 	padding: 2% 3%;
 	width: 18%;
+
 }
 
 .mainFooter {
 	/*background-color: #666666;*/
 	background-image: url('img/header-footer.png');
-	color: #ffffff;	
+	color: #FFFFFF;	
 	float: left;
-	line-height: 5px;
 	margin-bottom: 2%;
 	padding-left: 0;
-	padding: 5px 23px;
 	width: 100%;
+}
+
+.mainFooter p {
+
+	padding: 0% 5%;	
 }
 
 @media only screen and (min-width : 150px) and (max-width : 780px)
