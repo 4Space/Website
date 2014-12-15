@@ -1,180 +1,152 @@
+@font-face {
+  font-family: Minecraftia;
+  src: url(depend/Minecraftia.ttf);
+}
+
+* {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+} 
+
+html, body {
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  font-family: Minecraftia;
+  text-shadow: 0 0 5px black;
+}
+
 body {
-	/*background-color: #E6E6E6;*/
-	background-image: url('img/background.png');
-	color: #000305;
-	font-family: Trebuchet, Arial, sans-serif;
-	margin: 0 auto; 
-	width: 90%;
+  text-align: center;
+  background-color: black;
 }
 
-h1, h2 {
-	color: #368dea;
+.logo {
+  margin: 0;
+  font-family: Minecraftia;
+  font-size: 72px;
+  color: white;
+  text-shadow: 0 0 5px black;
 }
 
-a:link, a:visited {
-	color: #368dea;
-	padding: 0 1px;
-	text-decoration: none;
+.background {
+  background: url(img/backgrounds/1.jpg) 0 0 no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0;
+  z-index: -1;
 }
 
-a:hover, a:active {
-	background-color: #368dea;
-	color: #ffffff;
-	text-decoration: none;
+.content {
+  width: 650px;
+  height: 100%;
+  margin: 0 auto;
+  display: table;
+  overflow: hidden;
 }
 
-table, th, td {
-    border-collapse: collapse;
-    border: 1px solid black;
-    padding: 15px;
+.wrapper-for-centering {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.mainHeader nav {
-	/*background-color: #666666;*/
-	background-image: url('img/header-footer.png');
-	height: 40px;
-	line-height: 30px;
-	margin: 0 auto 30px auto;
-	text-align: center;
+.player {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 10px;
+  line-height: 20px;
+  color: white;
+  text-shadow: -1px 1px 1px black;
 
+  display: none;
 }
 
-.mainHeader nav ul li {
-	display: inline; 
-	float: left; 
-}
-	
-.mainHeader nav a:link, .mainHeader nav a:visited {
-	color: #ffffff;
-	display: inline-block;
-	padding: 5px 23px;
-	text-decoration: none;
-}
-.mainHeader nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-	background: #368dea;
-	color: #ffffff;
+.player-btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
 }
 
-.mainContent {
-	float: left;
-	line-height: 25px;
-	overflow: hidden;
-	width: 74%;
+.player-btn:before {
+  font-weight: bold;
+  content: "▶";
 }
 
-.blogContent {
-	/*background-color: #ffffff;*/
-	background-image: url('img/body.png');
-	margin-bottom: 3%;
-	padding: 3% 5%;	
+.player-btn.playing:before { 
+	content: "||"; 
 }
 
-.postInfo {
-	color: #999999;
-	font-size: 85%;
-	font-style: italic;
+.player-title {
+  color: white;
+  text-decoration: none;
 }
 
-.sidebar {
-	/*background-color: #ffffff;*/
-	background-image: url('img/body.png');
-	float: left;
-	margin-bottom: 2%;
-	margin-left: 2%;
-	padding: 2% 3%;
-	width: 18%;
-
+nav > div { 
+	display: none;
 }
 
-.mainFooter {
-	/*background-color: #666666;*/
-	background-image: url('img/header-footer.png');
-	color: #FFFFFF;	
-	float: left;
-	margin-bottom: 2%;
-	padding-left: 0;
-	width: 100%;
+nav > div > a {
+  display: block;
+  margin: 15px auto;
+  width: 256px;
+  height: 29px;
+
+  background: url(img/buttons/button.jpg) no-repeat;
+  text-decoration: none;
+  color: white;
+  text-shadow: -1px 1px 1px black;
 }
 
-.mainFooter p {
-
-	padding: 0% 5%;	
+nav > div > a:hover { 
+	background-image: url(img/buttons/button_hover.jpg); 
 }
 
-@media only screen and (min-width : 150px) and (max-width : 780px)
-{
-	.body {
-		clear: both; 
-		margin: 0 auto; 
-		width: 90%;
-	}
-	
-	.mainHeader nav {
-		/*background: #666666;*/
-		height: 240px;
-		line-height: 30px;
-		margin-bottom: 0;
-		margin-top: 4%;
-	}
-		
-	.mainHeader nav ul {
-		list-style: none; 
-		margin: 0 auto;
-		padding-left: 0;
-	}
-	
-	.mainHeader nav li {
-		margin-left: 0 auto;
-		width: 100%;
-	}
-	
-	.mainHeader nav a:link, .mainHeader nav a:visited {
-		color: #ffffff;
-		display: block;
-		height: 30px;
-		padding: 5px 0;
-		text-decoration: none;
-	}
-	
-	.mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-		background: #368dea;
-		color: #fffddd;
-	}
+nav a.back { 
+	margin-top: 60px; 
+}
 
-	.mainContent {
-		float: left;
-		line-height: 25px;
-		margin-top: 4%;
-		width: 100%;
-	}
-	
-	.blogContent {
-		/*background-color: #FFFFFF;*/
-		padding: 2% 5%;
-		margin-bottom: 4%;
-	}
+nav .thumbs a { 
+	display: inline-block; 
+}
 
-	.sidebar {
-		/*background-color: #FFFFFF;*/	
-		float: left;
-		margin-bottom: 2%;
-		margin-left: 0%;
-		margin-top: 4%;
-		padding: 0 7%;
-		width: 86%;
-	}
+footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
-	.mainFooter {
-		/*background-color: #666666;*/
-		color: #FFFFFF;
-		float: left;
-		margin: 2% 0;
-		padding-left: 0;
-		width: 100%;
-	}
-	
-	.mainFooter p {
-		width: 86%;
-		margin: 2% auto;
-	}
+footer a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+}
+
+footer a {
+  filter: grayscale(100%);
+  filter: url(grayscale.svg#grayscale);
+  filter: gray;
+}
+
+footer a:hover { 
+	filter: none; 
+}
+
+.twitter {
+	background-image: url(img/buttons/tw.png); 
+}
+
+.youtube { 
+	background-image: url(img/buttons/yt.png); 
+}
+
+.reddit { 
+	background-image: url(img/buttons/ri.png); 
+}
+
+.github  { 
+	background-image: url(img/buttons/gh.png); 
+}
+
+.wordpress { 
+	background-image: url(img/buttons/wp.png); 
 }
