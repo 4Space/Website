@@ -20,7 +20,7 @@ $(function()
 
 $(window).load(function() {
     var curBackground = 1;
-    var backgroundsCount = 6;
+    var backgroundsCount = 10;
     var backgroundsExt = '.jpg';
     var backgroundsUrlPrefix = 'img/backgrounds/';
 	
