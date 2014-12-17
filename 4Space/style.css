@@ -131,22 +131,22 @@ footer a:hover {
 	filter: none; 
 }
 
-.twitter {
+.twitter { 
+	filter: none; 
 	background-image: url(img/buttons/tw.png); 
 }
 
-.youtube { 
+.youtube {  
+	filter: none; 
 	background-image: url(img/buttons/yt.png); 
 }
 
-.reddit { 
-	background-image: url(img/buttons/ri.png); 
-}
-
-.github  { 
+.github  {  
+	filter: none; 
 	background-image: url(img/buttons/gh.png); 
 }
 
-.wordpress { 
+.wordpress {  
+	filter: none; 
 	background-image: url(img/buttons/wp.png); 
 }
